@@ -1,4 +1,4 @@
-
+// Drum Buttons
 var numOfDrumButtons = document.querySelectorAll(".drum").length; 
 for (var i = 0; i<numOfDrumButtons; i++){
 
