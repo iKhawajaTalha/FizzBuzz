@@ -6,7 +6,6 @@ for (var i = 0; i < numOfDrumButtons; i++) {
 
     //Audio added to buttons with switch statment
     switch (buttonInnerHTML) {
-
       case "w":
         var crash = new Audio("sounds/crash.mp3");
         crash.play();
@@ -42,7 +41,12 @@ for (var i = 0; i < numOfDrumButtons; i++) {
         tom4.play();
         break;
 
-      default: console.log(buttonInnerHTML);
+      default:
+        console.log(buttonInnerHTML);
     }
+  });
+
+  document.addEventListener("keypress", function () {
+    alert("Key was pressed!");
   });
 }
